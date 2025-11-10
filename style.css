@@ -80,4 +80,36 @@ button:hover {
   margin-top: 20px;
   font-weight: 600;
   color: #333;
+
+  /* 🎓 Header con logo centrado */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Efecto flotante suave para el logo */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #1a237e;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
 }

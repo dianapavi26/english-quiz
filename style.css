@@ -1,15 +1,19 @@
+/* 🌈 Modern English Challenge Design */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #f16529, #2965f1, #f7df1e);
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 12s ease infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  color: #222;
+  color: #fff;
   text-align: center;
+  margin: 0;
 }
 
 @keyframes gradient {
@@ -19,41 +23,60 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .question-box {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  width: 300px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  width: 320px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s ease;
+}
+
+.question-box:hover {
+  transform: scale(1.03);
 }
 
 button {
   display: block;
   width: 100%;
   margin: 8px 0;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 8px;
-  background: #333;
-  color: white;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #007bff;
+  font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 1rem;
 }
 
 button:hover {
-  background: #555;
+  background: #007bff;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
 }
 
 #next-btn {
-  background: #007bff;
+  background: #ffc107;
+  color: #222;
   display: none;
+}
+
+#next-btn:hover {
+  background: #ffb100;
 }
 
 #score {
   font-size: 1.2rem;
   margin-top: 20px;
+  font-weight: 600;
 }
+

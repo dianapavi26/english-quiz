@@ -1,17 +1,17 @@
-/* 🌈 Modern English Challenge Design */
+/* 🌟 English Challenge - Elegant Theme */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  background: linear-gradient(135deg, #f7f3e9, #e9f5ff);
   background-size: 400% 400%;
-  animation: gradient 12s ease infinite;
+  animation: gradient 15s ease infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  color: #fff;
+  color: #2c3e50;
   text-align: center;
   margin: 0;
 }
@@ -25,22 +25,23 @@ body {
 h1 {
   font-size: 2.2rem;
   margin-bottom: 25px;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #1a237e;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .question-box {
-  background: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid #ffd700;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   padding: 25px;
-  width: 320px;
-  backdrop-filter: blur(12px);
+  width: 340px;
+  backdrop-filter: blur(10px);
   transition: 0.3s ease;
 }
 
 .question-box:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 button {
@@ -50,33 +51,33 @@ button {
   padding: 12px;
   border: none;
   border-radius: 10px;
-  background: #ffffff;
-  color: #007bff;
+  background: #ffd700;
+  color: #222;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   font-size: 1rem;
 }
 
 button:hover {
-  background: #007bff;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  background: #fbc02d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(251, 192, 45, 0.5);
 }
 
 #next-btn {
-  background: #ffc107;
-  color: #222;
+  background: #1565c0;
+  color: white;
   display: none;
 }
 
 #next-btn:hover {
-  background: #ffb100;
+  background: #0d47a1;
 }
 
 #score {
   font-size: 1.2rem;
   margin-top: 20px;
   font-weight: 600;
+  color: #333;
 }
-
